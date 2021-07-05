@@ -15,8 +15,8 @@ article div {
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    color: var(--global-hover-color);
+    text-decoration: none;
   }
   &:hover:after {
     width: 100%;
@@ -104,13 +104,13 @@ a, table.table a {
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-theme-color);
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
       font-weight: bolder;
-      color: var(--global-theme-color);
+      color: var(--global-hover-color);
       &:hover {
         color: var(--global-hover-color);
       }
@@ -347,6 +347,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
+  margin-bottom: 0rem;
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
@@ -368,6 +369,7 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: -2rem;
     text-align: right;
+    font-size: 1.5rem;
   }
   ol.bibliography {
     list-style: none;
@@ -375,7 +377,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: -1rem;
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -397,9 +399,18 @@ footer.sticky-bottom {
         }
       }
       .title {
+        margin-bottom: 0rem;
         font-weight: bolder;
+        a {
+          &:hover {
+            color: var(--global-text-color);
+            text-decoration: none;
+          }
+        }
       }
       .author {
+        margin-bottom: 0rem;
+        font-size: 0.9rem;
         a {
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
@@ -408,18 +419,23 @@ footer.sticky-bottom {
           }
         }
         > em {
-          border-bottom: 1px solid;
+          border-bottom: 0px solid;
           font-style: normal;
+          font-weight: bolder;
         }
+      }
+      .periodical {
+        margin-bottom: 0rem;
+        font-size: 0.9rem;
       }
       .links {
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          padding-top: 0rem;
+          padding-bottom: 0rem;
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
