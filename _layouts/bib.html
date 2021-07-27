@@ -9,6 +9,10 @@
         <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
   {% endif %}
+  {% if entry.award %}
+    <abbr class="badge" style="background-color: orange">{{ entry.award }}</abbr>
+  {% endif %} 
+ 
   </div>
   <div>
     <img class="img-fluid mr-3" src="{{ entry.key | prepend: '/assets/img/thumbs/' | append: '.png' | relative_url }}" alt="Generic placeholder image">
