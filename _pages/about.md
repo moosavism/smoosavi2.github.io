@@ -7,9 +7,9 @@ description: Assistant Professor #,Department of Electrical and Electronic Engin
 profile:
   align: right
   image: prof_pic.jpg
-  address: >    
+  address: >   
+    <p>Department of Electrical and Electronic Engineering</p> 
     <p>Imperial College London</p>    
-    <p>Department of Electrical and Electronic Engineering</p>
     <p>Room 1003</p>
     <p>Exhibition Road</p>
     <p>London SW7 2AZ, UK</p>
