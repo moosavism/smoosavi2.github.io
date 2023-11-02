@@ -4,6 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: Courses, workshops, and ...
 nav: true
+nav_order: 5
 ---
 
 <h3 class="mt-4">ETH Zürich</h3>
