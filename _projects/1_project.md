@@ -2,7 +2,6 @@
 layout: page
 title: Geometric inductive bias of deep networks
 description: a project with a background image
-<<<<<<< HEAD:_projects/1_project.markdown
 img: /assets/img/talks/
 importance: 1
 category: 2020
